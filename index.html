@@ -1,14 +1,190 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form FCC</title>
+  <title>Questionnaire citoyen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <div></div>
+
+  <div>
+    <h1 id="title" class="title">Questionnaire pour un avenir meilleur.</h1>
+
+    <p id="description" class="description text-center">
+      Réflechissons ensemble à un avenir idéal! <br/> Votre avis est précieux!
+    </p>
+  </div>
+
+  <div class="container">
+    <form id="survey-form">
+        <p>
+        <label id="name-label" for="name">Nom</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="saisissez votre nom"
+          required
+        />
+        </p>
+
+        <p>
+        <label id="email-label" for="email">Em@il</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="saissisez votre email"
+          required
+        />
+        </p>
+
+        
+        <p>
+        <label id="number-label" for="number">Âge</label >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="16"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+        </p>
+      
+        <p>
+        Sexe
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>selectionnez</option>
+          <option value="feminin">féminin</option>
+          <option value="masculin">masculin</option>
+          <option value="autre">autre</option>
+          <option value="prononce-pas">ne se prononce pas</option>
+        </select>
+        </p>
+   
+        <p>Actuellement, vous êtes plutôt:</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="optimiste"
+            type="radio"
+          />optimiste
+        </label>
+
+        <br/>
+
+        <label>
+          <input
+            name="user-recommend"
+            value="negatif"
+            type="radio"
+          />négatif
+        </label>
+
+        <br/>
+  
+        <label >
+          <input
+            name="user-recommend"
+            value="neutre"
+            type="radio"
+          />neutre
+        </label>
+      
+
+        <p>
+          Cochez les éléments qu'il vous semble indispensable pour un avenir meilleur:
+          <span class="clue">Vous pouvez cochez plusieurs éléments.</span>
+        </p>
+  
+        <label>
+          <input
+            name="prefer"
+            value="ecologie"
+            type="checkbox"
+          />écologie
+        </label>
+
+        <br/>
+
+        <label>
+          <input
+            name="prefer"
+            value="humanitaire"
+            type="checkbox"
+          />humanitaire
+        </label>
+
+        <br/>
+
+        <label>
+          <input
+            name="prefer"
+            value="social"
+            type="checkbox"
+          />social
+        </label >
+
+        <br/>
+
+        <label>
+          <input
+            name="prefer"
+            value="politique"
+            type="checkbox"
+          />politique
+        </label>
+
+        <br/>
+
+        <label>
+          <input
+            name="prefer"
+            value="education"
+            type="checkbox"
+          />éducation
+        </label>
+
+        <br/>
+
+        <label>
+          <input
+            name="prefer"
+            value="technologique"
+            type="checkbox"
+          />technologie
+        </label>
+  
+
+        <p>Commentaires supplementaires</p>
+        <textarea
+          id="comments"
+          class="textarea"
+          name="comment"
+          placeholder="Saississez votre texte"
+        ></textarea>
+
+        <br/>
+  
+        <button type="submit" id="submit" class="button">
+          Soumettre
+        </button>
+
+        <button type="reset" id="submit" class="button">
+          Annuler
+        </button>
+
+
+  </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
