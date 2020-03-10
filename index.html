@@ -6,19 +6,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Questionnaire citoyen</title>
+
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Questionnaire citoyen</title>
 </head>
 
 <body>
   <div class="alert alert-success" role="alert">
-    <strong>Congratulations!</strong>
     <p>Bootstrap is now working on this page</p>
 </div>
 
   <div>
     <h1 id="title" class="title">Questionnaire pour un avenir meilleur.</h1>
+ 
 
     <p id="description" class="description text-center">
       Réflechissons ensemble à un avenir idéal! <br/> Votre avis est précieux!
@@ -76,13 +78,15 @@
         </select>
         </p>
    
-        <p>Actuellement, vous êtes plutôt:</p>
+        <p>&nbsp;</p>
+
+        <p>Lorsque vous pensez à l'avenir, vous êtes plutôt:</p>
         <label>
           <input
             name="user-recommend"
             value="optimiste"
             type="radio"
-          />optimiste
+          />&nbsp;optimiste
         </label>
 
         <br/>
@@ -92,7 +96,7 @@
             name="user-recommend"
             value="negatif"
             type="radio"
-          />négatif
+          />&nbsp;négatif
         </label>
 
         <br/>
@@ -102,13 +106,13 @@
             name="user-recommend"
             value="neutre"
             type="radio"
-          />neutre
+          />&nbsp;neutre
         </label>
       
-
+        <p>&nbsp;</p>
         <p>
-          Cochez les éléments qu'il vous semble indispensable pour un avenir meilleur:
-          <span class="clue">Vous pouvez cochez plusieurs éléments.</span>
+          Cochez le ou les éléments qu'il vous semble indispensable pour un avenir meilleur:
+          <br/>
         </p>
   
         <label>
@@ -116,7 +120,7 @@
             name="prefer"
             value="ecologie"
             type="checkbox"
-          />écologie
+          />&nbsp;écologie
         </label>
 
         <br/>
@@ -126,7 +130,7 @@
             name="prefer"
             value="humanitaire"
             type="checkbox"
-          />humanitaire
+          />&nbsp;humanitaire
         </label>
 
         <br/>
@@ -136,7 +140,7 @@
             name="prefer"
             value="social"
             type="checkbox"
-          />social
+          />&nbsp;social
         </label >
 
         <br/>
@@ -146,7 +150,7 @@
             name="prefer"
             value="politique"
             type="checkbox"
-          />politique
+          />&nbsp;politique
         </label>
 
         <br/>
@@ -156,7 +160,7 @@
             name="prefer"
             value="education"
             type="checkbox"
-          />éducation
+          />&nbsp;éducation
         </label>
 
         <br/>
@@ -166,11 +170,11 @@
             name="prefer"
             value="technologique"
             type="checkbox"
-          />technologie
+          />&nbsp;technologie
         </label>
   
-
-        <p>Commentaires supplementaires</p>
+        <p>&nbsp;</p>
+        <p>Libre expression:</p>
         <textarea
           id="comments"
           class="textarea"
@@ -178,13 +182,13 @@
           placeholder="Saississez votre texte"
         ></textarea>
 
-        <br/>
+        <p>&nbsp;</p>
   
-        <button type="submit" id="submit" class="button">
+        <button type="submit" id="submit" class="button btn-block">
           Soumettre
         </button>
 
-        <button type="reset" id="submit" class="button">
+        <button type="reset" id="submit" class="button btn-block">
           Annuler
         </button>
 
