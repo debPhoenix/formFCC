@@ -8,29 +8,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <title>Questionnaire citoyen</title>
 </head>
 
 <body>
-  <div class="alert alert-success" role="alert">
-    <p>Bootstrap is now working on this page</p>
-</div>
 
-  <div>
-    <h1 id="title" class="title">Questionnaire pour un avenir meilleur.</h1>
- 
 
-    <p id="description" class="description text-center">
-      Réflechissons ensemble à un avenir idéal! <br/> Votre avis est précieux!
+  <div class="container-haut">
+    <h1 id="title" class="title">Pour un avenir meilleur.</h1>
+
+
+    <p id="description" class="description">
+      Réflechissons ensemble à un avenir idéal!
     </p>
   </div>
 
   <div class="container">
     <form id="survey-form">
         <p>
-        <label id="name-label" for="name">Nom</label>
+        <label id="name-label" for="name" class="underline">Nom</label>
         <input
           type="text"
           name="name"
@@ -42,7 +41,7 @@
         </p>
 
         <p>
-        <label id="email-label" for="email">Em@il</label>
+        <label id="email-label" for="email" class="underline">Em@il</label>
         <input
           type="email"
           name="email"
@@ -55,7 +54,7 @@
 
         
         <p>
-        <label id="number-label" for="number">Âge</label >
+        <label id="number-label" for="number" class="underline">Âge</label >
         <input
           type="number"
           name="age"
@@ -69,7 +68,7 @@
       
         <p>
         Sexe
-        <select id="dropdown" name="role" class="form-control" required>
+        <select id="dropdown" name="role" class="form-control underline" required>
           <option disabled selected value>selectionnez</option>
           <option value="feminin">féminin</option>
           <option value="masculin">masculin</option>
@@ -80,7 +79,7 @@
    
         <p>&nbsp;</p>
 
-        <p>Lorsque vous pensez à l'avenir, vous êtes plutôt:</p>
+        <p class="underline">Lorsque vous pensez à l'avenir, vous êtes plutôt:</p>
         <label>
           <input
             name="user-recommend"
@@ -110,7 +109,7 @@
         </label>
       
         <p>&nbsp;</p>
-        <p>
+        <p class="underline">
           Cochez le ou les éléments qu'il vous semble indispensable pour un avenir meilleur:
           <br/>
         </p>
@@ -174,7 +173,7 @@
         </label>
   
         <p>&nbsp;</p>
-        <p>Libre expression:</p>
+        <p class="underline">Libre expression:</p>
         <textarea
           id="comments"
           class="textarea"
